@@ -1,0 +1,17 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrwserAutomate {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webDriver.ChromeDriver", "C:\\Users\\ayush.sharma1\\Downloads\\chromedriver_win32 (1).exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://www.google.co.in/");
+		driver.navigate().to("https://rahulshettyacademy.com/locatorspractice/");
+		Thread.sleep(5000);
+		driver.navigate().back();
+	}
+
+}
